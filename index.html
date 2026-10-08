@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SME Finance Product Strategy: Machinery Finance and Quick Digital Sanction Loan</title>
+<meta name="description" content="Product strategy for a digital-first SME lending business: proposition, go-to-market, credit framework and pricing.">
+<style>
+:root{--bg:#fff;--surface:#edf3f5;--ink:#1b2a3a;--muted:#4c5d6c;--brand:#0f4c5c;--accent:#c4510c;--line:#d0d9de;--on-brand:#fff;--bar2:#e36414}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1a22;--surface:#17252f;--ink:#e6edf1;--muted:#a3b3bf;--brand:#6fc0d1;--accent:#f2a541;--line:#2a3b47;--on-brand:#0f1a22;--bar2:#f2a541}}
+:root[data-theme="dark"]{--bg:#0f1a22;--surface:#17252f;--ink:#e6edf1;--muted:#a3b3bf;--brand:#6fc0d1;--accent:#f2a541;--line:#2a3b47;--on-brand:#0f1a22;--bar2:#f2a541}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:4.5rem}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 Calibri,"Segoe UI",system-ui,sans-serif}
+h1,h2,h3{font-family:Cambria,Georgia,serif;color:var(--brand);line-height:1.15;margin:0}
+a{color:var(--brand)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+nav{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);display:flex;gap:1.25rem;align-items:center;padding:.7rem max(1.25rem,calc((100% - 1100px)/2));overflow-x:auto;white-space:nowrap}
+nav b{font-family:Cambria,Georgia,serif;color:var(--brand);margin-right:auto}
+nav a{text-decoration:none;color:var(--muted);font-size:.95rem}
+nav a:hover{color:var(--brand)}
+nav button{background:none;border:1px solid var(--line);color:var(--muted);border-radius:6px;padding:.25rem .6rem;cursor:pointer;font:inherit;font-size:.9rem}
+main,header>div{max-width:1100px;margin:0 auto;padding:0 1.25rem}
+header{padding:4rem 0 3rem}
+h1{font-size:clamp(2.2rem,6vw,4rem);max-width:16ch}
+header p{max-width:60ch;color:var(--muted);font-size:1.15rem;margin:1.2rem 0 2rem}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.slip{background:var(--brand);color:var(--on-brand);border-radius:10px;padding:1.4rem}
+.slip:nth-child(2){background:var(--accent);color:#fff}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .slip:nth-child(2){color:#0f1a22}}
+:root[data-theme="dark"] .slip:nth-child(2){color:#0f1a22}
+.slip h2{color:inherit;font-size:1.5rem;margin-bottom:.6rem}
+.slip dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:.3rem 1rem;font-size:.95rem}
+.slip dt{opacity:.8}.slip dd{margin:0;font-weight:700}
+section{padding:3rem 0;border-top:1px solid var(--line)}
+section>h2{font-size:clamp(1.7rem,4vw,2.4rem);margin-bottom:.4rem}
+.lede{color:var(--muted);max-width:65ch;margin:0 0 1.6rem}
+.tw{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:640px;font-size:.95rem}
+th,td{padding:.7rem .8rem;border:1px solid var(--line);text-align:left;vertical-align:top}
+thead th{background:var(--brand);color:var(--on-brand)}
+tbody th{background:var(--surface);color:var(--brand);width:11rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:1rem}
+.box{background:var(--surface);border-radius:10px;padding:1.25rem}
+.box h3{font-size:1.2rem;margin-bottom:.6rem}
+.box h4{margin:.9rem 0 .3rem;color:var(--accent);font-size:1rem}
+.box ul{margin:0;padding-left:1.1rem}.box li{margin:.35rem 0}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.75rem;margin:0 0 1.5rem;padding:0;list-style:none;counter-reset:s}
+.steps li{background:var(--surface);border-radius:10px;padding:1rem;counter-increment:s;font-size:.93rem}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:1.7rem;height:1.7rem;border-radius:50%;background:var(--brand);color:var(--on-brand);font-weight:700;margin-bottom:.5rem}
+.steps.ex li::before{background:var(--accent);color:#fff}
+.steps b{display:block;color:var(--brand)}
+.lane{margin:1.4rem 0 .6rem;font-size:1.15rem}
+.chart{display:grid;gap:.9rem}
+.row{display:grid;grid-template-columns:7rem 1fr;gap:.8rem;align-items:center;font-size:.92rem}
+.stack{display:flex;height:2rem;border-radius:5px;overflow:hidden;background:var(--surface)}
+.stack i{display:block;color:#fff;font-style:normal;font-size:.8rem;padding:.35rem .5rem;white-space:nowrap}
+.m{background:var(--brand)}.d{background:var(--bar2)}
+:root[data-theme="dark"] .m,:root[data-theme="dark"] .d{color:#0f1a22}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .m,:root:not([data-theme="light"]) .d{color:#0f1a22}}
+.key{display:flex;gap:1rem;font-size:.9rem;color:var(--muted);margin-top:.8rem}
+.key span::before{content:"";display:inline-block;width:.8rem;height:.8rem;border-radius:2px;margin-right:.35rem;vertical-align:-1px}
+.key .m::before{background:var(--brand)}.key .d::before{background:var(--bar2)}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:.8rem;margin-top:1.5rem}
+.kpis div{background:var(--brand);color:var(--on-brand);border-radius:10px;padding:1rem}
+.kpis b{display:block;font:700 1.7rem Cambria,Georgia,serif}
+.kpis span{font-size:.9rem}
+.bars{display:grid;grid-template-columns:repeat(5,1fr);gap:.6rem;align-items:end;height:200px;border-bottom:1px solid var(--line)}
+.bars div{display:flex;align-items:flex-end;justify-content:center;gap:4px;height:100%}
+.bars i{width:40%;font-style:normal;text-align:center;font-size:.78rem;position:relative;border-radius:4px 4px 0 0}
+.bars i span{position:absolute;top:-1.2rem;left:0;right:0}
+.bars .m{background:var(--brand)}.bars .d{background:var(--bar2)}
+.cats{display:grid;grid-template-columns:repeat(5,1fr);gap:.6rem;text-align:center;font-size:.85rem;color:var(--muted);margin-top:.4rem}
+.two{display:grid;grid-template-columns:1.1fr 1fr;gap:2rem;align-items:start}
+.phase{margin:0 0 .8rem}.phase b{color:var(--accent)}
+footer{border-top:1px solid var(--line);padding:2rem 1.25rem;text-align:center;color:var(--muted);font-size:.9rem}
+@media (max-width:760px){.duo,.two{grid-template-columns:1fr}.row{grid-template-columns:5rem 1fr}}
+</style>
+</head>
+<body>
+<nav aria-label="Sections"><b>SME Finance Strategy</b><a href="#proposition">Proposition</a><a href="#journey">Digital journey</a><a href="#market">Go-to-market</a><a href="#plan">12-month plan</a><a href="#credit">Credit</a><a href="#pricing">Pricing</a><button id="t" type="button" aria-label="Toggle dark mode">Theme</button></nav>
+<header><div>
+<h1>Growing SME lending with two focused products</h1>
+<p>A product strategy for Machinery Finance on refurbished and used equipment, and a Quick Digital Sanction Loan that decides in minutes. Figures are indicative planning assumptions.</p>
+<div class="duo">
+<div class="slip"><h2>Machinery Finance</h2><dl><dt>Ticket</dt><dd>Rs 10 L - 5 Cr</dd><dt>Tenure</dt><dd>12-60 months</dd><dt>Funding</dt><dd>Up to 70-75% of valued asset</dd><dt>Turnaround</dt><dd>5 days</dd></dl></div>
+<div class="slip"><h2>Quick Digital Sanction Loan</h2><dl><dt>Ticket</dt><dd>Rs 3-25 L new, up to Rs 75 L existing</dd><dt>Tenure</dt><dd>12-48 months</dd><dt>Security</dt><dd>Unsecured</dd><dt>Sanction</dt><dd>Under 30 minutes</dd></dl></div>
+</div></div></header>
+<main>
+<section id="proposition"><h2>Product proposition</h2><p class="lede">Machinery Finance backs capacity and technology upgrades. The digital loan serves working-capital and small-capex needs with minimal paperwork.</p>
+<div class="tw"><table><thead><tr><th></th><th>Machinery Finance</th><th>Quick Digital Sanction Loan</th></tr></thead><tbody>
+<tr><th>Target segments</th><td>Manufacturing and processing SMEs (auto components, plastics, packaging, textiles, food, printing, CNC job shops) and contractors with construction equipment</td><td>Existing customers (pre-approved base) and new GST-registered traders, light manufacturers, service SMEs and retailers</td></tr>
+<tr><th>Need and value</th><td>Capacity expansion and upgrades at 30-50% lower capex than new machines; ready-to-run assets with quick delivery</td><td>Paperless working capital or small-capex funding: decision in minutes, no collateral, no branch visit</td></tr>
+<tr><th>Ticket and tenure</th><td>Rs 10 L - 5 Cr (core Rs 20-75 L); 12-60 months, up to 72 for heavy plant</td><td>New: Rs 3-25 L; existing: up to Rs 75 L pre-approved; 12-48 months, 3 tenure choices</td></tr>
+<tr><th>Structure and collateral</th><td>Up to 70-75% LTV on independently valued FMV; first charge on machine plus promoter guarantee; asset age 10 years or less; step-up and seasonal EMIs</td><td>Unsecured term loan with digital promoter guarantee; optional top-up line for good existing customers</td></tr>
+<tr><th>Eligibility</th><td>Vintage 3+ years; turnover Rs 2 Cr+; promoter bureau 700+; DSCR 1.25+; 2 years ITR, GST and 12 months bank statements</td><td>Vintage 2+ years (1+ for existing); GST-registered; turnover Rs 60 L+; bureau 700+; no 60+ DPD in 12 months</td></tr>
+<tr><th>Differentiators</th><td>Dealer-led one-stop (valuation, refurbishment warranty, insurance, funding); 5-day TAT; flexible EMIs; resale and buy-back support</td><td>Sanction in under 30 minutes, disbursal in 24 hours; vernacular journey; one-page transparent offer; loyalty rate step-down</td></tr>
+</tbody></table></div></section>
+
+<section id="journey"><h2>Quick Digital Sanction Loan journey</h2><p class="lede">One flow for new customers, and a shorter pre-approved path for existing ones.</p>
+<h3 class="lane">New customers: sanction in under 30 minutes</h3>
+<ol class="steps"><li><b>Onboard</b>Web, app, WhatsApp or partner link; PAN, GSTIN and mobile OTP only</li><li><b>Consent and data</b>One-click consent pulls bureau, GST, bank statements (AA), Udyam, e-KYC</li><li><b>Auto-decision</b>Scorecard and policy rules return approve, refer or decline</li><li><b>Instant offer</b>Limit, rate, EMI and 3 tenure options</li><li><b>Close</b>e-KYC, e-sign, e-NACH and penny-drop bank check</li><li><b>Disburse</b>Funds within 24 hours with WhatsApp and SMS status</li></ol>
+<h3 class="lane">Existing customers: pre-approved, same-day top-up</h3>
+<ol class="steps ex"><li><b>Pre-approved offer</b>Behaviour-based limit via app, SMS and RM, refreshed monthly</li><li><b>One-click consent</b>No fresh documents; GST and bank data refresh in the background</li><li><b>Instant checks</b>Delinquency, bureau-trigger and fraud screens run automatically</li><li><b>Same-day disbursal</b>e-sign on existing mandate; funds credited the same day</li></ol>
+<div class="grid"><div class="box"><h3>Fewer inputs</h3>6 customer inputs at most; the rest auto-fills from GST, PAN and MCA.</div><div class="box"><h3>Transparent pricing</h3>Single fee slab, no hidden charges, one-page key facts statement in local language.</div><div class="box"><h3>Assisted fallback</h3>Save and resume; call-back or RM video assist when a case is referred.</div><div class="box"><h3>Flexible servicing</h3>Part-payment and foreclosure free after 6 months; rate step-down for on-time payers.</div></div></section>
+
+<section id="market"><h2>Go-to-market</h2><p class="lede">Dealers and OEMs drive machinery volume. Existing customers and digital partners drive the digital loan.</p>
+<div class="grid">
+<div class="box"><h3>Where to play</h3><h4>Machinery Finance</h4><ul><li><b>Industries:</b> auto ancillary and CNC, plastics, packaging and printing, textiles, food processing, construction equipment</li><li><b>Clusters:</b> Pune, Coimbatore, Rajkot, Ahmedabad, Ludhiana, NCR, Chennai</li><li><b>Profile:</b> owner-run units, Rs 2-50 Cr turnover, 3-15 years vintage, GST-compliant</li></ul><h4>Quick Digital Loan</h4><ul><li>Traders and distributors (FMCG, pharma, electronics), light manufacturers, service SMEs, retailers</li><li>GST turnover Rs 60 L - 10 Cr in Tier 1-2 cities with high GST and UPI density</li><li>Existing customers with 12+ months clean repayment</li></ul></div>
+<div class="box"><h3>Sourcing and distribution</h3><h4>Machinery Finance</h4><ul><li><b>Dealers and OEMs (~50%):</b> 150 dealers, 10 OEM or refurbisher tie-ups, dealer app, incentives on quality and speed</li><li><b>Direct sales (~30%):</b> cluster RMs, industry associations, trade fairs</li><li><b>DSAs (~15%)</b> for Tier 2-3; digital leads (~5%)</li></ul><h4>Quick Digital Loan</h4><ul><li><b>Existing-base campaigns (~45%):</b> pre-approved offers</li><li><b>Digital and partner APIs (~35%):</b> own app, WhatsApp, accounting software, B2B marketplaces, payment gateways</li><li><b>Direct and DSA (~20%):</b> assisted cases</li></ul></div>
+<div class="box"><h3>Cross-sell and conversion</h3><h4>Cross-sell</h4><ul><li>Machinery customers get working-capital top-ups, insurance and LAP</li><li>Digital customers with 24+ clean months graduate to machinery</li><li>Approach vendors and dealers of existing borrowers</li></ul><h4>Conversion and penetration</h4><ul><li>48-hour lead SLA; instant indicative EMI quote</li><li>Digital document capture, nudges and assisted call-back to recover drop-offs</li><li>60%+ of empanelled dealers active every month</li><li>Target: 15% of base holding both products within 12 months</li></ul></div>
+</div></section>
+
+<section id="plan"><h2>12-month growth plan</h2><p class="lede">About Rs 350 Cr of disbursement: Rs 200 Cr machinery and Rs 150 Cr digital.</p>
+<div class="two"><div><div class="chart" role="img" aria-label="Quarterly disbursement in Rs crore. Q1: 15 machinery, 5 digital. Q2: 35 and 20. Q3: 60 and 45. Q4: 90 and 80.">
+<div class="row">Q1 (M1-3)<div class="stack"><i class="m" style="width:7.5%">15</i><i class="d" style="width:2.5%">5</i></div></div>
+<div class="row">Q2 (M4-6)<div class="stack"><i class="m" style="width:17.5%">35</i><i class="d" style="width:10%">20</i></div></div>
+<div class="row">Q3 (M7-9)<div class="stack"><i class="m" style="width:30%">60</i><i class="d" style="width:22.5%">45</i></div></div>
+<div class="row">Q4 (M10-12)<div class="stack"><i class="m" style="width:45%">90</i><i class="d" style="width:40%">80</i></div></div></div>
+<div class="key"><span class="m">Machinery Finance</span><span class="d">Quick Digital Loan</span><span>Rs Cr</span></div></div>
+<div><p class="phase"><b>Months 1-3, build and pilot.</b> Policy, scorecard v1, valuer panel; 3 clusters, 25 dealers, 2 OEMs; digital loan live for pre-approved existing base.</p><p class="phase"><b>Months 4-6, launch.</b> 8 cities, 75 dealers; digital loan opens to new customers via app and 2 API partners; 50%+ auto-decisions.</p><p class="phase"><b>Months 7-9, scale.</b> 150 dealers, 6 OEMs; scorecard v2 recalibrated on live data; cross-sell campaigns; collections automation.</p><p class="phase"><b>Months 10-12, optimise.</b> 15 cities, 10 OEMs; 70%+ auto-decisions; pricing refresh; year-2 plan for co-lending and new asset classes.</p></div></div>
+<div class="kpis"><div><b>Rs 350 Cr</b><span>disbursement</span></div><div><b>~2,000</b><span>customers (~570 machinery, ~1,500 digital)</span></div><div><b>150 / 10</b><span>active dealers / OEM tie-ups</span></div><div><b>70%+</b><span>digital loans auto-decisioned</span></div><div><b>&lt;2% / &lt;3%</b><span>90+ DPD, machinery / digital</span></div></div></section>
+
+<section id="credit"><h2>Credit and underwriting</h2><p class="lede">Risk-based underwriting, automated where data is strong and reviewed by people where it is not.</p>
+<div class="grid">
+<div class="box"><h3>Key risks and mitigants</h3><ul><li><b>Machinery, asset and resale:</b> independent FMV, age and LTV caps, GPS tag, insurance, dealer buy-back</li><li><b>Machinery, fraud and dealer collusion:</b> invoice and title checks, site visit, dealer scorecard and holdback</li><li><b>Digital, default and over-leverage:</b> bureau and cash-flow limits, FOIR up to 55%, promoter guarantee</li><li><b>Digital, identity fraud and model drift:</b> e-KYC, statement-tamper checks, device and geo checks, monthly model monitoring</li></ul></div>
+<div class="box"><h3>By documentation and vintage</h3><ul><li><b>Full financials (3+ years):</b> DSCR on audited numbers, 1.25x minimum; full LTV and ticket</li><li><b>ITR, GST and bank (2-3 years):</b> cash-flow underwriting on average balance and GST turnover; 70% of verified inflows counted</li><li><b>Thin file or under 2 years:</b> promoter bureau, 60% LTV, ticket cap, site visit, co-applicant; start small and step up on clean repayment</li></ul></div>
+<div class="box"><h3>Digital data and decisioning</h3><ul><li><b>Data:</b> commercial and promoter bureau, GST returns, AA bank statements, ITR, Udyam and MCA, e-invoice and e-way bill, UPI and POS flows, device and geo, own repayment history</li><li><b>Engine:</b> ~65% straight-through approve or decline; ~25% auto-referred to credit desk; ~10% manual</li><li><b>Overrides:</b> authority matrix, logged reason codes, 5% override cap, 5% audit of auto-approvals, champion-challenger models</li></ul></div>
+<div class="box"><h3>Early warnings and actions</h3><ul><li><b>Signals:</b> bounced EMIs and DPD 1-5, bureau score drop, GST filing lapse or turnover down 25%, falling bank balance, idle machine (GPS), insurance lapse, dealer-level delinquency</li><li><b>Actions:</b> reminder at T-3; call and field visit at 15 DPD; freeze top-ups; restructure viable cases; repossess and resell via dealers at 90 DPD; tighten cut-offs on weak segments or dealers</li></ul></div>
+</div></section>
+
+<section id="pricing"><h2>Pricing and profitability</h2><p class="lede">Price by risk, measure by risk-adjusted return, and compete on speed and service before rate.</p>
+<div class="tw"><table><thead><tr><th></th><th>Machinery Finance</th><th>Quick Digital Loan</th></tr></thead><tbody>
+<tr><th>Interest rate</th><td>13.5-17.5% p.a., risk-graded</td><td>16-24% p.a., by score band</td></tr>
+<tr><th>Processing fee</th><td>1-2% plus GST</td><td>1.5-3% plus GST, slab-based</td></tr>
+<tr><th>Other charges</th><td>Valuation and legal at actuals; penal charge on overdue (no compounding); prepayment nil on floating rate</td><td>Penal charge on overdue; prepayment free after 6 months</td></tr>
+<tr><th>Price drivers</th><td>Risk grade, LTV, asset age and liquidity, tenure, vintage, dealer subvention</td><td>Score band, ticket, vintage, repeat status, channel cost</td></tr>
+</tbody></table></div>
+<h3 style="margin:2rem 0 1rem;font-size:1.3rem">Indicative unit economics, % of average book</h3>
+<div class="bars" role="img" aria-label="Machinery vs digital: yield 15.0 vs 20.0, cost of funds 9.3 vs 9.3, opex 2.2 vs 3.0, credit cost 1.3 vs 4.0, pre-tax margin 2.2 vs 3.7">
+<div><i class="m" style="height:75%"><span>15.0</span></i><i class="d" style="height:100%"><span>20.0</span></i></div>
+<div><i class="m" style="height:46.5%"><span>9.3</span></i><i class="d" style="height:46.5%"><span>9.3</span></i></div>
+<div><i class="m" style="height:11%"><span>2.2</span></i><i class="d" style="height:15%"><span>3.0</span></i></div>
+<div><i class="m" style="height:6.5%"><span>1.3</span></i><i class="d" style="height:20%"><span>4.0</span></i></div>
+<div><i class="m" style="height:11%"><span>2.2</span></i><i class="d" style="height:18.5%"><span>3.7</span></i></div></div>
+<div class="cats"><span>Yield</span><span>Cost of funds</span><span>Opex</span><span>Credit cost</span><span>Pre-tax margin</span></div>
+<div class="key"><span class="m">Machinery Finance</span><span class="d">Quick Digital Loan</span></div>
+<div class="grid" style="margin-top:1.5rem">
+<div class="box"><h3>Evaluating and lifting returns</h3><ul><li><b>Measure:</b> RAROC = (yield - cost of funds - opex - expected loss) / capital, by product, channel, dealer and vintage cohort; hurdle ROE 15%+</li><li><b>Levers:</b> dealer-led sourcing and digital documents cut cost; priority-sector and co-lending funds lower cost of funds; insurance cross-sell and top-ups add fee income</li></ul></div>
+<div class="box"><h3>Competitive and sustainable</h3><ul><li><b>Benchmark</b> monthly against banks, NBFCs and fintechs; compete on speed, LTV and service, not rate alone</li><li><b>Targeted discounts:</b> dealer subvention and rate step-down for on-time payers; no cuts for high-risk grades</li><li><b>Guardrail:</b> a pricing committee enforces a RAROC floor per segment</li></ul></div></div></section>
+</main>
+<footer>Indicative figures for planning purposes. Rates and limits to be validated against current regulation and the institution's policy.</footer>
+<script>
+document.getElementById("t").addEventListener("click",function(){var r=document.documentElement,d=r.getAttribute("data-theme"),sys=matchMedia("(prefers-color-scheme:dark)").matches,cur=d||(sys?"dark":"light");r.setAttribute("data-theme",cur==="dark"?"light":"dark")});
+</script>
+</body>
+</html>
